@@ -46,9 +46,9 @@ https://github.com/aoun234/ai-cyber-shield1
 
 ## 📸 Screenshots
 
-| Dashboard                                  | Scan Dashboard                                      | Scan History                                    | Login                                  | Signup                                  |
-|--------------------------------------------|-----------------------------------------------------|-------------------------------------------------|----------------------------------------|-----------------------------------------|
-| ![Dashboard](screenshots/Dashboard.jpeg)   | ![Scan Dashboard](screenshots/scandashborad.jpeg)   | ![Scan History](screenshots/scanhistroy.jpeg)   | ![Login](screenshots/loginform.jpeg)   |  ![Signup](screenshots/signupform.jpeg) |
+| Dashboard                                  | Scan Dashboard                                    | Scan History                                    | Login                                  | Signup                                  |
+|--------------------------------------------|---------------------------------------------------|-------------------------------------------------|----------------------------------------|-----------------------------------------|
+| ![Dashboard](screenshots/Dashboard.jpeg)   | ![Scan Dashboard](screenshots/scandashboard.jpeg) | ![Scan History](screenshots/scanhistroy.jpeg)   | ![Login](screenshots/loginform.jpeg)   |  ![Signup](screenshots/signupform.jpeg) |
 
 | Report                              | Chatbot                               | Cyber Chatbot                                     | Menu                            |
 |-------------------------------------|---------------------------------------|---------------------------------------------------|---------------------------------|
