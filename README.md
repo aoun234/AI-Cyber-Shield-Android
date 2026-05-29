@@ -71,4 +71,5 @@ https://github.com/aoun234/ai-cyber-shield1
    ```bash
    git clone https://github.com/aoun234/AI-Cyber-Shield-Android.git
 
- 
+#### 9. Developer & Support
+- **Developed by: Muhammad Aoun, sibtain safdar , Sarfraz haderi
