@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ================= PERMISSIONS ================= -->
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <!-- ================= APPLICATION ================= -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AICyberShield"
+        tools:targetApi="31">
+
+        <!-- ================= LAUNCHER ================= -->
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+
+        </activity>
+
+        <!-- ================= AUTH ================= -->
+
+        <activity android:name=".activities.LoginActivity"/>
+
+        <activity android:name=".activities.SignupActivity"/>
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <activity android:name=".activities.DashboardActivity"/>
+
+        <!-- ================= SCAN ================= -->
+
+        <activity android:name=".activities.ScanActivity"/>
+
+        <activity android:name=".activities.ResultActivity"/>
+
+        <!-- ================= CHATBOT ================= -->
+
+        <activity android:name=".activities.ChatbotActivity"/>
+
+        <!-- ================= HISTORY ================= -->
+
+        <activity android:name=".activities.HistoryActivity"/>
+
+        <!-- ================= SETTINGS / INFO ================= -->
+
+        <activity android:name=".activities.AboutActivity"/>
+
+        <activity
+            android:name=".activities.PrivacyPolicyActivity"/>
+
+        <activity android:name=".activities.ContactActivity"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">AI Cyber Shield</string>
+
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+
+    <string name="scan">Scan Website</string>
+    <string name="history">History</string>
+    <string name="chatbot">AI Chatbot</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+
+</resources>

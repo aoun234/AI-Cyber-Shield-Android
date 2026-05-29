@@ -1,0 +1,124 @@
+
+
+### 📄 AI Cyber Shield – User Manual (v1.0)
+
+---
+
+ 1. Introduction
+
+AI Cyber Shield is an Android app that checks websites for security weaknesses. It scans for:
+
+- Missing security headers (CSP, HSTS, X-Frame-Options)
+- Open network ports (80, 443, 22, 3306)
+- Active XSS and SQL injection vulnerabilities
+- CMS detection (WordPress, Joomla, etc.)
+
+It then uses Google Gemini AI to explain each vulnerability in plain language – what the attack is, what damage can happen, and how to fix it.
+
+---
+
+#### 2. Installation
+
+1.  Download the APK  
+   - Go to the GitHub repository: `https://github.com/aoun234/AI-Cyber-Shield-Android`
+   - Open the `apk/` folder → download `AI-Cyber-Shield.apk`
+
+2.   Install the APK  
+   - On your Android phone, open the downloaded `.apk` file.
+   - If a warning appears, tap   Settings   → enable   Allow from this source   (or go to `Settings → Security → Unknown sources` and enable for your browser/file manager).
+   - Go back and tap   Install  .
+
+3.   Open the app   after installation.
+
+---
+
+#### 3. Getting Started (Firebase Login)
+
+-   New users:   Tap   Sign up  , enter your email and a password (minimum 6 characters).
+-   Existing users:   Tap   Login   and enter your credentials.
+- After login, you will see the   Dashboard  .
+
+---
+
+#### 4. Scanning a Website
+
+1. On the   Scan Dashboard  , type a full website URL (e.g., `https://ul.edu.pk`).
+2. Tap the   SCAN   button.
+3. Wait for the scan to finish – usually   15–40 seconds  .
+4. The result screen shows:
+   -   Security score   (0–100, higher is better)
+   -   List of vulnerabilities   with risk level: HIGH, MEDIUM, INFO
+   - For each vulnerability, you will see:
+     -   Attack   – how an attacker could exploit it
+     -   Impact   – what damage could occur
+     -   Fix   – step‑by‑step recommendation
+
+> ⚠️   Important – Render Backend (cold start)  
+> The backend is hosted on Render’s free tier. If no scan is performed for   15 minutes  , the backend goes to sleep.
+> - The   first scan after inactivity   may take   30–60 seconds   (this is normal – the server is waking up).
+> - If you get a timeout,   wait 2 minutes   and try again. Once awake, scans will be fast.
+
+---
+
+#### 5. Understanding Scan Results – Examples
+
+| Vulnerability Found | What It Means |
+|---------------------|----------------|
+| Missing CSP | No Content Security Policy – risk of XSS (cross‑site scripting). |
+| Missing X‑Frame‑Options | Your site can be embedded in a malicious iframe (clickjacking). |
+| Open port 80/443 | Web ports open – normal, but ensure your web server is secure. |
+| SQLi risk | Input fields may allow SQL injection – use parameterized queries. |
+| XSS risk | Input fields may allow script injection – sanitize user input. |
+
+For any vulnerability, the AI will give a specific explanation and fix.
+
+---
+
+#### 6. Chatbot Feature
+
+- Tap the   Chat   icon (bottom menu).
+- Type any cybersecurity question, e.g.,
+  - “What is cross‑site scripting?”
+  - “How to prevent SQL injection?”
+- The AI will answer in simple language.
+
+---
+
+#### 7. Scan History
+
+- Tap  *History** from the main menu.
+- You will see all previous scans (saved locally on your device).
+- Tap any entry to view the full vulnerability report again.
+
+---
+
+#### 8. Troubleshooting
+
+| Problem                   | Solution 
+| App crashes when opening: | Clear app cache in Android settings, or reinstall the APK. |
+| Scan takes very long (> 60 sec) :| Most likely the backend is waking up (cold start). Wait 2 minutes and try again. |
+| “AI explanation unavailable”: | Gemini API quota may be exhausted – the app falls back to a built‑in explanation (still useful). |
+| Login or signup fails :| Check your internet connection. Ensure you entered a valid email and strong password (Firebase rules). |
+
+---
+
+#### 9. Developer & Support
+
+- **Developed by: Muhammad Aoun, sibtain safdar , Sarfraz haderi
+- **GitHub:** [aoun234](https://github.com/aoun234)
+- **Email:** aoulo71@gmail.com
+- **Backend repository:** [ai-cyber-shield1](https://github.com/aoun234/ai-cyber-shield1)
+
+For questions or issues, please open a GitHub issue or contact via email.
+
+---
+
+#### 10. License & Privacy
+
+- This app is released under the **MIT License**.
+- **Privacy:** Your email is used only for Firebase Authentication. Scan data is **not** stored on any server. The app does not collect or share personal information.
+
+---
+
+**Thank you for using AI Cyber Shield!**
+

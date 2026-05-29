@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "614699343624",
+    "project_id": "cyber-shield-ai-fad53",
+    "storage_bucket": "cyber-shield-ai-fad53.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614699343624:android:c5d45d04259f6bad0756bd",
+        "android_client_info": {
+          "package_name": "com.example.aicybershield"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiPF9D-KL0MZJEXQ9zq9glxC-2JnhniRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
